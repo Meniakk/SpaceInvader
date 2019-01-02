@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Aviad Gottesman
+Main-Class: Ass7Game
+Class-Path: src/biuoop-1.4.jar

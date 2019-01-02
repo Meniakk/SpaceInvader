@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Alien-Invasers">
+    <output-path>$PROJECT_DIR$/out/artifacts/Alien_Invasers</output-path>
+    <root id="archive" name="Alien-Invasers.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Manifest.mf" output-file-name="MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
