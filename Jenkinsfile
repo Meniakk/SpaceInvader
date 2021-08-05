@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Stage1') {
       steps {
-        sh 'make build'
+        sh '''#!/bin/bash -l
+echo \'building...\'
+make compile'''
       }
     }
 
