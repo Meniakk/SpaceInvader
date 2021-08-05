@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Stage1') {
       steps {
-        sh '''#!/bin/bash -l
+        sh '''echo \'Trying to install make...\'
+apt-get install build-essential
 echo \'building...\'
 make compile'''
       }
