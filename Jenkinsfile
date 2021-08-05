@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Stage1') {
       steps {
-        sh 'make compile'
+        sh 'echo \'compile\''
       }
     }
 
