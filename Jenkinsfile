@@ -4,7 +4,7 @@ pipeline {
     stage('Stage1') {
       steps {
         sh '''echo \'Trying to install make...\'
-apt-get install build-essential
+sudo apt-get install build-essential
 echo \'building...\'
 make compile'''
       }
