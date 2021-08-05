@@ -4,7 +4,7 @@ pipeline {
     stage('Stage1') {
       steps {
         sh 'echo \'trying to make\''
-        sh 'make compile'
+        sh 'ls'
         catchError(catchInterruptions: true, buildResult: 'Fail', stageResult: 'Fail', message: 'Failed') {
           sh 'echo \'why god\''
         }
@@ -18,8 +18,5 @@ pipeline {
       }
     }
 
-  }
-  environment {
-    TEST = 'True'
   }
 }
