@@ -26,8 +26,8 @@ spec:
 
     stage('stage2') {
       steps {
-        sh 'Testing...'
-        sh 'ls'
+        sh 'echo \'Testing...\''
+        sh 'make run'
       }
     }
 
