@@ -8,7 +8,7 @@ kind: Pod
 spec:
   containers:
   - name: jdk
-    image: kitware/cmake
+    image: kitware/cmake:ci-hip4.2-x86_64-2021-07-09
     command:
     - cat
     tty: true
