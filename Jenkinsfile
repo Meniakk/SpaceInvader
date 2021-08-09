@@ -8,12 +8,7 @@ kind: Pod
 spec:
   containers:
   - name: make
-    image: kitware/cmake:ci-hip4.2-x86_64-2021-07-09
-    command:
-    - cat
-    tty: true
-  - name: jdk
-    image: openjdk:8
+    image: truevolve/ubuntu-java-wine:latest
     command:
     - cat
     tty: true
