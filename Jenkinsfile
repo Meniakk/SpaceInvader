@@ -9,6 +9,7 @@ pipeline {
     stage('Stage1') {
       steps {
         sh 'echo \'trying to make\''
+        sh 'dockerd'
         sh 'make compile'
       }
     }
