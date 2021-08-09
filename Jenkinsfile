@@ -1,13 +1,13 @@
 pipeline {
   agent {
     kubernetes {
-            defaultContainer 'myContainer'
+            defaultContainer 'mycontainer'
             yaml """
 apiVersion: v1
 kind: Pod
 spec:
   containers:
-  - name: myContainer
+  - name: mycontainer
     image: truevolve/ubuntu-java-wine:latest
     command:
     - cat
