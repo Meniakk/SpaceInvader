@@ -1,8 +1,19 @@
 pipeline {
   agent {
-    docker {
-      image 'kitware/cmake'
-    }
+    kubernetes {
+            defaultContainer 'jdk'
+            yaml """
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+  - name: jdk
+    image: kitware/cmake
+    command:
+    - cat
+    tty: true
+"""
+        }
 
   }
   stages {
