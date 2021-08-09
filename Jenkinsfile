@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    docker {
+      image 'kitware/cmake'
+    }
+
+  }
   stages {
     stage('Stage1') {
       steps {
