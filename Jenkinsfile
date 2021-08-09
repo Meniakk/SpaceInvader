@@ -1,8 +1,8 @@
 pipeline {
   agent {
     kubernetes {
-            defaultContainer 'mycontainer'
-            yaml """
+      defaultContainer 'mycontainer'
+      yaml '''
 apiVersion: v1
 kind: Pod
 spec:
@@ -12,8 +12,8 @@ spec:
     command:
     - cat
     tty: true
-"""
-        }
+'''
+    }
 
   }
   stages {
@@ -26,7 +26,8 @@ spec:
 
     stage('stage2') {
       steps {
-        sh 'echo stage2'
+        sh 'Testing...'
+        sh 'ls'
       }
     }
 
